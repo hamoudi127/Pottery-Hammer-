@@ -15,17 +15,17 @@ body {
 }
 
 .slider {
-  width: 800px;
+  width: 5000px;
   height: 500px;
-  
-}
-.slides{
-  width: 400%;
-  height: 400px;
-  display: flex;
+  border-radius: 10px;
   overflow: hidden;
-  margin: 0px 400px auto;
-  border-radius: 10px 10px;
+}
+
+.slides{
+  width: 500%;
+  height: 500px;
+  display: flex;
+
   
 }
 .slides input {
@@ -42,16 +42,15 @@ body {
 }
 
 .slide img{
-width: 500px;
+width: 100%;
 height: 500px;
-border-radius: 10px 0px 0px 10px;
 
 
 }
 .navigation-manual{
 position: absolute;
-width: 1260px;
-margin-top: -30px;
+width: 200px;
+margin-top: -40px;
 display: flex;
 justify-content: center;
 
@@ -321,11 +320,15 @@ header * {
 
 /* About Start */
 #about {
-  height: 100vh;
+  margin: 0;
+  padding: 0;
+  height:auto;
   background: #f4f4f4;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
+  
 }
 
 #about .title,
@@ -366,7 +369,7 @@ header * {
 }
 
 #about img {
-  max-width: 450px;
+  max-width: auto !important;
 }
 
 #about .about-content a {
