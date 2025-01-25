@@ -17,34 +17,54 @@
 </head>
 
 <body>
+    <script src="js/script.js"></script>
     <!-- Header Start -->
     <header>
-        <div id="navbar">
-           
-            <img src="./img2/لوكو الشركة.png" alt="شركة المطرقة الفخارية Logo">
-           
-                <div class="logo"><a href="#">Welcome</a></div>
-                <ul class="links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-           
-            <a href="#" class="action_btn">Get Started</a>
-            <div class="toggle_btn">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </div>
-        <div class="dropdown_menu">
-            <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li> <a href="#" class="action_btn">Get Started</a></li>
-        </div>
+       
+               <div id="navbar">
+                            <div class="img">
+                                <img src="./img2/لوكو الشركة.png" alt="شركة المطرقة الفخارية Logo">
+                            </div>
+                            <div class="logo"><a href="#">Welcome</a></div>
+                            <ul class="links">
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#menu">Menu</a></li>
+                                <li><a href="#gallery">Gallery</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        
+                            <a href="#" class="action_btn">Get Started</a>
+                            <div class="toggle_btn">
+                                <i class="fa-solid fa-bars"></i>
+                            </div>
+                            <div class="dropdown_menu">
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#menu">Menu</a></li>
+                                <li><a href="#gallery">Gallery</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                                <li> <a href="#" class="action_btn">Get Started</a></li>
+                            </div>
+                            <script>
+                                const toggleBtn = document.querySelector('.toggle_btn');
+                                const toggleBtnIcon = document.querySelector('.toggle_btn');
+                                const dropDownMenu = document.querySelector('.dropdown_menu');
+                        
+                                toggleBtn.onclick = function (){
+                                    dropDownMenu.classList.toggle('open');
+                                  const isOpen = dropDownMenu.classList.contains('open');
+                                  toggleBtnIcon.classList = isOpen 
+                                  ? 'fa-solid fa-xmark' 
+                                  : 'fa-solid fa-bars' 
+                                }
+                              
+                            </script>
+        
+                </div>
+                  
+            
+
          <!-- Logo and Navigation -->
          <div class="rem">
             <h1>شركة المطرقة الفخارية</h1>
@@ -66,20 +86,7 @@
             <a href="#contact" class="btn btn-primary">Contact Us</a>
         </div>
     </header>
-    <script>
-        const toggleBtn = document.querySelector('.toggle_btn');
-        const toggleBtnIcon = document.querySelector('.toggle_btn');
-        const dropDownMenu = document.querySelector('.dropdown_menu');
-
-        toggleBtn.onclick = function (){
-            dropDownMenu.classList.toggle('open');
-          const isOpen = dropDownMenu.classList.contains('open');
-          toggleBtnIcon.classList = isOpen 
-          ? 'fa-solid fa-xmark' 
-          : 'fa-solid fa-bars' 
-        }
-      
-    </script>
+   
     <!-- Header End -->
     <main>
         <!-- About Section Start -->
