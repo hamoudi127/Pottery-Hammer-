@@ -758,6 +758,11 @@ form {
     padding: 0px 10px;
   
   }
+  #menu .menu-items {
+    display: block;
+   
+  }
+  
   #menu .btn {
   font-size: 10px;
   }
