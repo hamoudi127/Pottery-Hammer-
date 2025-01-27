@@ -152,7 +152,7 @@ header {
 #navbar .logo a {
   font-size: 1.5rem;
   font-weight: bold;
-
+display: none;
 
 }
 #navbar .links {
@@ -192,17 +192,19 @@ header {
 }
 .dropdown_menu{
   display: none;
-  position: unset;
-  right: 2rem;
-  top: 60px;
-  height: 0;
-  width: 300px;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(15px);
-  border-radius: 10px;
+  position: absolute;
+  left: 1%;
+  top: 46px;
+  height: 0px;
+  width: 73px;
+  background: rgba(226, 220, 220, 0.1);
+  backdrop-filter: blur(23px);
+  border-radius: 12px;
   overflow: hidden;
-  padding: 10px 10px;
+  padding: 0px 12px;
   transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+ 
+
 }
 .dropdown_menu.open{
   height:auto;
@@ -220,29 +222,13 @@ header {
   display: flex;
   justify-content: center;
 }
-@media(max-width: 992px){
-  #navbar .links,
-  #navbar .action_btn{
-    display: none;
-    
-  }
-  #navbar .toggle_btn{
-    display: block; 
-  margin-left: 350px;
-   }
-   .dropdown_menu{
-      display: block;
-    }
+.fa-solid{
+  color:#fff;
+  font-size: large;
+
 }
-
-@media(max-width: 576px){
-  #dropdown_menu{
-    left: 2rem;
-    width: unset;
-  
-
-  }
-
+.fa-xmark:before{
+  font-size: large;
 }
 header .rem{
 display: flex;
@@ -600,10 +586,15 @@ form button {
   }
   .dropdown_menu.open{
     height: auto;
-  
+ 
   
   }
-  
+  .dropdown_menu {
+    display: block;
+    left: 7%;
+    top: -19px;
+    
+}
   #navbar .logo a {
     font-size: 20px;
     align-items: center;
@@ -705,11 +696,9 @@ form {
  }
  #navbar .toggle_btn{
    display: block; 
- margin-left: 50px;
+
   }
-  .dropdown_menu{
-     display: block;
-   }
+
    #menu .title h2 {
    font-size: 20px;
   }
@@ -775,11 +764,13 @@ font-size: 13px;
       font-size: 2rem;
     
     }
-    .dropdown_menu.open{
-      height: auto;
-    
-    
-    }
+ 
+  .fa-solid, .fas {
+    font-weight: 900;
+    display: block;
+    margin-left: 0px;
+    align-self: stretch;
+}
     
     #navbar .logo a {
       font-size: 20px;
@@ -797,8 +788,8 @@ font-size: 13px;
      
     }
     header .rem h1{
-      padding: 1px 65px;
-      font-size: 18px;
+        padding: 1px 0px 6px;
+        font-size: 18px;
     }
     header .rem h2{
       font-size: 15px;
@@ -806,7 +797,7 @@ font-size: 13px;
     }
     header .rem h3{
       font-size: 15px;
-       padding: 1px 18px;
+      padding: 0px 0px 96px;
     }
     header .content p {
      
@@ -873,11 +864,14 @@ font-size: 13px;
      
    }
    #navbar .toggle_btn{
-     display: block; 
-   margin-left: 50px;
+    display: block;
+    margin-left: 3px;
+    align-self: stretch;
     }
     .dropdown_menu{
        display: block;
+       left: 1%;
+    top: 46px;
      }
      #menu .title h2 {
      font-size: 20px;
